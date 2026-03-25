@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(java:*)",
+      "Bash(/usr/libexec/java_home:*)",
+      "Bash(wc:*)",
+      "WebSearch",
+      "WebFetch(domain:developer.garmin.com)",
+      "Bash(system_profiler:*)",
+      "Bash(brew list:*)",
+      "Bash(mdfind:*)",
+      "Bash(open:*)",
+      "Bash(SDK=\"/Users/henry/Library/Application Support/Garmin/ConnectIQ/Sdks/connectiq-sdk-mac-8.4.1-2026-02-03-e9f77eeaa/bin\")",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(mv Garmin-Face/source .)",
+      "Bash(mv Garmin-Face/resources .)",
+      "Bash(mv Garmin-Face/manifest.xml .)",
+      "Bash(mv Garmin-Face/monkey.jungle .)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
