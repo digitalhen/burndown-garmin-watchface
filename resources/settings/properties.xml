@@ -1,0 +1,18 @@
+<properties xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <property id="ColorTheme" type="number">0</property>
+    <property id="SquareStyle" type="number">0</property>
+    <property id="TimeFormat" type="number">0</property>
+    <property id="ShowDate" type="boolean">true</property>
+    <property id="DateFormat" type="number">0</property>
+    <property id="ShowSeconds" type="boolean">false</property>
+    <property id="FontSize" type="number">1</property>
+    <property id="TextColor" type="number">0xFFFFFF</property>
+    <property id="ShowBbValue" type="boolean">false</property>
+    <property id="ShowSteps" type="boolean">false</property>
+    <property id="ShowHeartRate" type="boolean">false</property>
+    <property id="ShowDeviceBattery" type="boolean">false</property>
+    <property id="LowBbThreshold" type="number">0</property>
+
+</properties>

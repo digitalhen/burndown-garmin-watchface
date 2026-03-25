@@ -21,6 +21,10 @@ class Garmin_FaceApp extends Application.AppBase {
         return [ new Garmin_FaceView() ];
     }
 
+    function onSettingsChanged() as Void {
+        WatchUi.requestUpdate();
+    }
+
 }
 
 function getApp() as Garmin_FaceApp {

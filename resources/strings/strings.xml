@@ -1,3 +1,53 @@
 <strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <string id="AppName">Burndown</string>
+
+    <string id="ColorThemeTitle">Color Theme</string>
+    <string id="ThemeRedGreen">Red / Green</string>
+    <string id="ThemeOrangeBlue">Orange / Blue</string>
+    <string id="ThemePurpleYellow">Purple / Yellow</string>
+    <string id="ThemePinkCyan">Pink / Cyan</string>
+    <string id="ThemeWhiteGray">White / Gray</string>
+
+    <string id="SquareStyleTitle">Tile Style</string>
+    <string id="StyleSquare">Square</string>
+    <string id="StyleRounded">Rounded</string>
+    <string id="StyleCircle">Circle</string>
+    <string id="StyleDiamond">Diamond</string>
+
+    <string id="TimeFormatTitle">Time Format</string>
+    <string id="TimeFormatDevice">Device Setting</string>
+    <string id="TimeFormat12h">12-Hour</string>
+    <string id="TimeFormat24h">24-Hour</string>
+
+    <string id="ShowDateTitle">Show Date</string>
+
+    <string id="DateFormatTitle">Date Format</string>
+    <string id="DateFormatDayMonDate">Tue Mar 25</string>
+    <string id="DateFormatMonDate">Mar 25</string>
+    <string id="DateFormatDateMon">25 Mar</string>
+
+    <string id="ShowSecondsTitle">Show Seconds</string>
+
+    <string id="FontSizeTitle">Text Size</string>
+    <string id="FontSizeSmall">Small</string>
+    <string id="FontSizeMedium">Medium</string>
+    <string id="FontSizeLarge">Large</string>
+    <string id="FontSizeXLarge">Extra Large</string>
+
+    <string id="TextColorTitle">Text Color</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorLightGray">Light Gray</string>
+    <string id="ColorYellow">Yellow</string>
+    <string id="ColorBlue">Blue</string>
+
+    <string id="ShowBbValueTitle">Show Body Battery Value</string>
+    <string id="ShowStepsTitle">Show Steps</string>
+    <string id="ShowHeartRateTitle">Show Heart Rate</string>
+    <string id="ShowDeviceBatteryTitle">Show Device Battery</string>
+
+    <string id="LowBbThresholdTitle">Low Battery Warning</string>
+    <string id="LowBbOff">Off</string>
+    <string id="LowBb15">Below 15</string>
+    <string id="LowBb25">Below 25</string>
+    <string id="LowBb35">Below 35</string>
 </strings>

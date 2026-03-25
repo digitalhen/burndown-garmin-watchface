@@ -1,0 +1,90 @@
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+
+    <setting propertyKey="@Properties.ColorTheme" title="@Strings.ColorThemeTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.ThemeRedGreen</listEntry>
+            <listEntry value="1">@Strings.ThemeOrangeBlue</listEntry>
+            <listEntry value="2">@Strings.ThemePurpleYellow</listEntry>
+            <listEntry value="3">@Strings.ThemePinkCyan</listEntry>
+            <listEntry value="4">@Strings.ThemeWhiteGray</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.SquareStyle" title="@Strings.SquareStyleTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.StyleSquare</listEntry>
+            <listEntry value="1">@Strings.StyleRounded</listEntry>
+            <listEntry value="2">@Strings.StyleCircle</listEntry>
+            <listEntry value="3">@Strings.StyleDiamond</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.TimeFormat" title="@Strings.TimeFormatTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.TimeFormatDevice</listEntry>
+            <listEntry value="1">@Strings.TimeFormat12h</listEntry>
+            <listEntry value="2">@Strings.TimeFormat24h</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ShowDate" title="@Strings.ShowDateTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.DateFormat" title="@Strings.DateFormatTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.DateFormatDayMonDate</listEntry>
+            <listEntry value="1">@Strings.DateFormatMonDate</listEntry>
+            <listEntry value="2">@Strings.DateFormatDateMon</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ShowSeconds" title="@Strings.ShowSecondsTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.FontSize" title="@Strings.FontSizeTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.FontSizeSmall</listEntry>
+            <listEntry value="1">@Strings.FontSizeMedium</listEntry>
+            <listEntry value="2">@Strings.FontSizeLarge</listEntry>
+            <listEntry value="3">@Strings.FontSizeXLarge</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.TextColor" title="@Strings.TextColorTitle">
+        <settingConfig type="list">
+            <listEntry value="0xFFFFFF">@Strings.ColorWhite</listEntry>
+            <listEntry value="0xAAAAAA">@Strings.ColorLightGray</listEntry>
+            <listEntry value="0xFFFF00">@Strings.ColorYellow</listEntry>
+            <listEntry value="0x55AAFF">@Strings.ColorBlue</listEntry>
+        </settingConfig>
+    </setting>
+
+    <setting propertyKey="@Properties.ShowBbValue" title="@Strings.ShowBbValueTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.ShowSteps" title="@Strings.ShowStepsTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.ShowHeartRate" title="@Strings.ShowHeartRateTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.ShowDeviceBattery" title="@Strings.ShowDeviceBatteryTitle">
+        <settingConfig type="boolean" />
+    </setting>
+
+    <setting propertyKey="@Properties.LowBbThreshold" title="@Strings.LowBbThresholdTitle">
+        <settingConfig type="list">
+            <listEntry value="0">@Strings.LowBbOff</listEntry>
+            <listEntry value="15">@Strings.LowBb15</listEntry>
+            <listEntry value="25">@Strings.LowBb25</listEntry>
+            <listEntry value="35">@Strings.LowBb35</listEntry>
+        </settingConfig>
+    </setting>
+
+</settings>
