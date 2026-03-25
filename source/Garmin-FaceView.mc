@@ -52,9 +52,11 @@ class Garmin_FaceView extends WatchUi.WatchFace {
         if (squareSize < 16) { squareSize = 16; }
         if (squareSize > 56) { squareSize = 56; }
         var gap = 2;
-        var cx = 140;
-        var cy = 140;
-        var radius = 138;
+        var screenW = dc.getWidth();
+        var screenH = dc.getHeight();
+        var cx = screenW / 2;
+        var cy = screenH / 2;
+        var radius = cx - 2;
         var used = 100 - bbCurrent;
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_BLACK);
         dc.clear();
@@ -63,10 +65,10 @@ class Garmin_FaceView extends WatchUi.WatchFace {
         var visibleX = new [200];
         var visibleY = new [200];
         var visibleCount = 0;
-        var cols = (280 + squareSize - 1) / squareSize;
-        var rows = (280 + squareSize - 1) / squareSize;
-        var offsetX = (280 - cols * squareSize) / 2;
-        var offsetY = (280 - rows * squareSize) / 2;
+        var cols = (screenW + squareSize - 1) / squareSize;
+        var rows = (screenH + squareSize - 1) / squareSize;
+        var offsetX = (screenW - cols * squareSize) / 2;
+        var offsetY = (screenH - rows * squareSize) / 2;
         for (var row = 0; row < rows; row++) {
             for (var col = 0; col < cols; col++) {
                 var x = offsetX + col * squareSize;
@@ -107,18 +109,21 @@ class Garmin_FaceView extends WatchUi.WatchFace {
         var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
 
         // Draw text with black outline then white fill
+        var textX = cx;
+        var dateY = cy - 35;
+        var timeY = cy;
         dc.setColor(Graphics.COLOR_BLACK, Graphics.COLOR_TRANSPARENT);
         for (var ox = -1; ox <= 1; ox++) {
             for (var oy = -1; oy <= 1; oy++) {
                 if (ox != 0 || oy != 0) {
-                    dc.drawText(140 + ox, 105 + oy, Graphics.FONT_LARGE, dateString, Graphics.TEXT_JUSTIFY_CENTER);
-                    dc.drawText(140 + ox, 140 + oy, Graphics.FONT_LARGE, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+                    dc.drawText(textX + ox, dateY + oy, Graphics.FONT_LARGE, dateString, Graphics.TEXT_JUSTIFY_CENTER);
+                    dc.drawText(textX + ox, timeY + oy, Graphics.FONT_LARGE, timeString, Graphics.TEXT_JUSTIFY_CENTER);
                 }
             }
         }
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(140, 105, Graphics.FONT_LARGE, dateString, Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(140, 140, Graphics.FONT_LARGE, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(textX, dateY, Graphics.FONT_LARGE, dateString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(textX, timeY, Graphics.FONT_LARGE, timeString, Graphics.TEXT_JUSTIFY_CENTER);
 
     }
 
